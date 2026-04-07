@@ -1,8 +1,8 @@
 function Header(){
     return(
-        <header>
+        <header className="mb-50">
             <div className="flex justify-between items-centes">
-                <h1>RJ</h1>
+                <h1 className="text-4xl font-inter tracking-wide">RJ</h1>
                 <nav>
                     <ul className="flex gap-4">
                     <li><a href="#">Início</a></li>
