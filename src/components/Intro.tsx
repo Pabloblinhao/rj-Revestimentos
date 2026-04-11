@@ -4,10 +4,17 @@ import Benefits from "./Benefits";
 
 function Intro(){
     return(
-<section className="pt-32 px-8 pb-8 bg-white">
+<section className="pt-[150px] px-[20px] pb-8 bg-white relative">
 
-  <div className="bg-gray-100 max-w-[1500px] mx-auto border border-gray-300 p-10 flex flex-col">
-
+{/* quadrado */}
+<div className="absolute top-10 left-0 w-16 h-[100px] bg-gray-800"></div>
+  <div className="bg-gray-100 max-w-[1800px] mx-auto border border-gray-300 p-10 flex flex-col">
+{/* BOLINHAS */}
+<div className="absolute h-[160px] right-[90px] bottom-20 flex flex-col gap-2">
+  <div className="w-[100px] h-[100px]  border border-gray-900 rounded-full"></div>
+  <div className="w-[100px] h-[100px]  border mt-[-80px] border-gray-600 rounded-full"></div>
+  <div className="w-[100px] h-[100px]  border  mt-[-80px] border-gray-400 rounded-full"></div>
+</div>
     {/* LINHA DE CIMA */}
     <div className="flex gap-8 items-start">
 
@@ -22,14 +29,14 @@ function Intro(){
       </div>
 
       <div className="w-1/2 relative h-[600px] flex justify-end">
-        <img className="w-[300px] h-[250px] object-cover absolute top-0 right-0" src={img1} />
-        <img className="w-[300px] h-[250px] object-cover absolute top-72 left-20" src={img2} />
+        <img className="w-[400px] h-[250px] object-cover absolute top-[-10px] right-[-10px]" src={img1} />
+        <img className="w-[400px] h-[250px] object-cover absolute mt-[320px] left-[150px]" src={img2} />
       </div>
 
     </div>
 
     {/* LINHA DE BAIXO */}
-    <div className="-mt-[280px] w-1/2 pl-6">
+    <div className="-mt-[260px] w-1/2 ">
       <Benefits />
     </div>
 
